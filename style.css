@@ -1,0 +1,225 @@
+/* General design */
+
+/* paragraphs and list elements */
+body {
+	background-color: #f0dec0;
+	color: #227C9D;
+	font-family: 'Architects Daughter', cursive;
+	font-size: 17px;
+}
+
+/* headers */
+h1, h2, h3, h4 {
+	font-family: 'Merienda', cursive;
+}
+
+h1, h2, h3 {
+	color: #FE6D73;
+}
+
+h1, h2, h4 {
+	font-weight: 700;
+}
+
+h3 {
+	font-weight: 400;
+	line-height: 1.2;
+	font-size: 24px;
+}
+
+
+h4 {
+	line-height: 1;
+}
+
+/* link */
+a {
+	font-family: 'Architects Daughter', cursive;
+	text-decoration: none;
+	transition: color 0.3s ease;
+	font-weight: bold;
+	color: #17C3B2
+}
+
+a:hover {
+	color: #02111b;
+	font-weight: bold;
+}
+
+/* paragraph */
+p {
+	F3F8F2	text-align: justify;
+	font-size: 17px;
+ }
+
+ /* classes */
+.container {
+	width: 800px;
+	margin: 30px auto;
+}
+
+.cream-card {
+	margin: 15px 0px;
+	background-color: #fffbf5;                 /* White background */
+	padding: 50px;                             /* Internal space */
+	border-radius: 4px;                        /* Small radius */
+	box-shadow: 0 10px 30px rgba(0,0,0,.1);    /* Light shadow */
+}
+
+/* card inside the card */
+.card-600px-white {
+	width : 600px;
+	padding: 25px; 
+	border-radius: 10px;
+	margin: 30px auto;
+	background-color: white;
+	box-shadow: 0px 30px 20px rgba(0,0,0,.1);    /* Light shadow */
+	transition: color 0.3s ease;
+}
+
+/* Mouse over the card */
+.card-600px-white:hover {
+	border: solid 1px #02111b;
+
+}
+
+.img-circle-shadowed {
+	border-radius: 50%;
+	box-shadow: 5px 2px 3px #02111b;
+}
+
+.list-inline li {
+	display: inline;
+	padding :1px;
+}
+
+.button-green {
+	font-weight: lighter;
+	color : white;
+	background-color: #17C3B2;
+	padding: 10px 15px;
+	border-radius: 4px;
+}
+
+.button-green:hover {
+	color : white;
+	font-weight: lighter;
+	background-color: #02111b;
+}
+
+/* display not in line */
+.list-not-inline ul{
+	/* no margin, no padding */
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+.list-not-inline {
+	/* 2 columns with 2 elements in column */
+	column-count: 2;
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+}
+
+.list-not-inline li{
+	display: inline-block;
+	padding: 5px;
+}
+
+/* Specific design with id */
+#img-profile {
+	width : 200px;
+	height : 200px;
+}
+
+#social-media, #introduction, h2 {
+	text-align: center;
+}
+
+#introduction p {
+	margin-bottom: 35px;
+}
+
+#list-grid ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+
+#list-grid {
+	column-count: 2;
+	-webkit-column-count: 2;
+	-moz-column-count: 3;
+}
+
+#list-grid {
+	display: inline-block;
+}
+
+#social-media-list li {
+	padding : 20px;
+}
+
+#social-media-list i {
+	font-size: 60px;
+	color: #f5f4f2;
+}
+
+#social-media-list i:hover {
+	color: #02111b;
+}
+
+
+/* Reactive design */
+@media (max-width: 960px) {
+  .container {
+    width: 700px;
+  }
+
+  .card-600px-white {
+  	width: 500px;
+  }
+}
+
+@media (max-width: 720px) {
+  	.container {
+    	width: 550px;
+  	}
+
+	.card-600px-white {
+  	width: 400px;
+  	}
+
+	.list-not-inline {
+		column-count: 2;
+		-webkit-column-count: 1;
+		-moz-column-count: 6;
+	}
+	.list-not-inline li{
+		display: block;
+		padding: 5px;
+	}
+	#list-grid {
+		column-count: 1;
+		-webkit-column-count: 1;
+		-moz-column-count: 6;
+	}
+
+	#list-grid {
+	display: inline-block;
+	}
+
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: 470px;
+  }
+  .card-600px-white {
+  	width: 320px;
+  }
+
+
+}

@@ -77,12 +77,6 @@ p {
 	transition: color 0.3s ease;
 }
 
-/* Mouse over the card */
-.card-600px-white:hover {
-	border: solid 1px #02111b;
-
-}
-
 .img-circle-shadowed {
 	border-radius: 50%;
 	box-shadow: 5px 2px 3px #02111b;
@@ -214,12 +208,21 @@ p {
 }
 
 @media (max-width: 540px) {
-  .container {
-    width: 470px;
-  }
-  .card-600px-white {
-  	width: 320px;
-  }
+	.container {
+		width: 470px;
+	}
+	.card-600px-white {
+		width: 320px;
+	}
 
+	#list-grid {
+		column-count: 1;
+		-webkit-column-count: 1;
+		-moz-column-count: 6;
+	}
+
+	#list-grid {
+	display: inline-block;
+	}
 
 }

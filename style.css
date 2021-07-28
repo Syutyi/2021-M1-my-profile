@@ -164,6 +164,37 @@ p {
 	color: #02111b;
 }
 
+#menu {
+	display:flex;
+	justify-content:space-around;
+	margin : 30px;
+	font-size : 16px;
+	flex-wrap : wrap;
+}
+
+#menu a {
+	font-family: 'Merienda', cursive;
+}
+
+#menu a:hover {
+	text-decoration:underline;
+}
+
+.item {
+	width : 200px;
+	margin : 5px;
+}
+
+#top-button {
+	position: fixed;
+    bottom: 15px;
+	right:15px;
+}
+
+#top-button:hover {
+	color : white;
+	background-color : black;	
+}
 
 /* Reactive design */
 @media (max-width: 960px) {

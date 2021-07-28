@@ -4,7 +4,7 @@
 body {
 	background-color: #f0dec0;
 	color: #227C9D;
-	font-family: 'Architects Daughter', cursive;
+	font-family: 'Shadows Into Light', cursive;
 	font-size: 17px;
 }
 
@@ -34,7 +34,7 @@ h4 {
 
 /* link */
 a {
-	font-family: 'Architects Daughter', cursive;
+	font-family: 'Shadows Into Light', cursive;
 	text-decoration: none;
 	transition: color 0.3s ease;
 	font-weight: bold;
@@ -49,7 +49,7 @@ a:hover {
 /* paragraph */
 p {
 	F3F8F2	text-align: justify;
-	font-size: 17px;
+	font-size: 19px;
  }
 
  /* classes */

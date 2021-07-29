@@ -126,6 +126,36 @@ p {
 	height : 200px;
 }
 
+.sidebar {
+  position: fixed;
+  width: 220px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.sidebar ul {
+	list-style: none;
+}
+
+.sidebar a {
+	font-family: 'Merienda', cursive;
+	text-shadow: 4px 2px 3px rgba(130, 130, 130, 0.8);
+	color: white;
+}
+
+.sidebar a:hover {
+	color: #02111b;
+}
+
+.sidebar li {
+	margin-bottom: 15px;
+}
+
+.page-content {
+  margin-left: 200px;
+}
+
 #social-media, #introduction, h2 {
 	text-align: center;
 }
